@@ -1,10 +1,30 @@
-# c4t aka. check 4 twins
-# This script checks for twins in the tags of plant 3d 2017 objects
+# c4t aka. check4twins
+# This script checks for twins in the tags of plant 3d 2017 objects exported as csv format with the data manager
 # The script checks all registered tags in the KKS (Kraftwerk-Kennzeichen-System)
-# Double tags or twins are registered and listed and echoed
+# Double tags or twins are registered and listed 
 #
-#
-#
-#
-#
-# written by sargantana
+# written by sargantana Oct. 2016
+
+
+#!/bin/bash
+zenity --file-selection
+echo "Choosed CSV: $(zenity --file-selection)
+INPUT=zenity --file-selection
+OLDIFS=$IFS
+IFS=","
+[ ! -f $INPUT ] &while read Tag Größe Rohrklasse Nach Von Auslegungsdruck Betriebstemperatur Betriebsdruck Tracing Isolierungstyp Isolierungsstärke
+do
+        echo "Tag : $Tag"
+        echo "Größe : $Größe"
+        echo "Rohrklasse : $Rohrklasse"
+        echo "Nach : $Nach"
+        echo "Von : $Von"
+        echo "Auslegungsdruck : $Auslegungsdruck"
+        echo "Betriebstemperatur : $Betriebstemperatur"
+        echo "Betriebsdruck : $Betriebsdruck"
+        echo "Tracing : $Tracing"
+        echo "Isolierungstyp : $Isolierungstyp"
+        echo "Isolierungsstärke : $Isolierungsstärke"
+        
+done < $INPUT
+IFS=$OLDIFS
