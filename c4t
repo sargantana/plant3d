@@ -1,0 +1,10 @@
+# c4t aka. check 4 twins
+# This script checks for twins in the tags of plant 3d 2017 objects
+# The script checks all registered tags in the KKS (Kraftwerk-Kennzeichen-System)
+# Double tags or twins are registered and listed and echoed
+#
+#
+#
+#
+#
+# written by sargantana
