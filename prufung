@@ -1,4 +1,5 @@
-  //Prüfungsroutine für Autodesk AutoCAD Plant 3D
+  #Prüfungsroutine für Autodesk AutoCAD Plant 3D
   
-  PLANTAUDIT
-  PURGE
+I.    PLANTAUDIT -> /nur DWG spezifisch /Gleicht Zeichnung mit Datenbank ab und löscht überflüssige Datensätze
+II.   _PURGE -> Löscht überflüssige Tags, Layer, doppelt und ungenutze Blöcke etc.
+III.  PRÜFUNG -> /Nur wenn einziger Zugriff auf Projekt  /Rechtsklick /Projektmanager Datenbank bereinigen & komprimieren
